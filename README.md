@@ -33,6 +33,7 @@ A combined webscraper and crawler that uses selenium to navigate to active conta
 
 ## Dependencies 
 Download selenium with the command  sudo pip install selenium
+
 Download chrome driver with associated with your chrome version at https://chromedriver.chromium.org/downloads
 # index.htm
 
