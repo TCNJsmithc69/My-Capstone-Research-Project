@@ -13,7 +13,7 @@ This file uses DBSCAN which is a python library which creates clusters(groupings
 
 Screenshot of output where locations are plotted by their longitude and latitude coordinates. The red circles represent the likely contaminated areas and the yellow circles represent potentially contaminated areas.
 
-![GitHub Logo](/images/clusteringAlgorithm.png)
+![Alt text](relative/path/to/img.jpg?raw=true "clusteringAlgorithm")
 ##coordinates.py
 
 This file uses the geopy library to convert addresses into a geolocation with x and y coordinates.
