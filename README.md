@@ -4,7 +4,8 @@ SOAP(Students Organized Against Pollution)
 Christopher Smith
 SOAP Capstone Project
 
-Here are some python files I've created for my Capstone Research Project.
+Here are some python files I've created for my Capstone Research Project. The goal of the project was to identify locations that could be brownfields, which are sites that are environmentally compromised. They're usually sites that used to be previously owned by factories. If you would like to learn more, I included my research paper in the docs folder.
+
 A description is given for each file listed. An example of front end development with HTML and javascript is found in index.htm. 
 
 # clustering.py
