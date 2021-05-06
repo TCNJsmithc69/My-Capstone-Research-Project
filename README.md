@@ -27,6 +27,7 @@ Webcrawler that uses selenium to navigate to active contaminated sites on the NJ
 Html page that can be hosted on localhost that uses the javascript library leaflet which is a mapping tool. Using the longitude and latitude coordinates that were converted with coordinates.py, each brownfield location is displayed using OpenStreetMap. Also, cluster groups are shown using yellow(potentially contaminated) and red(likely contaminated) zones.
 
 To run this file use the command python -m http.server after downloading a stable version of leaflet at 
+
 ![Image of Clustering]
 (https://github.com/TCNJsmithc69/My-Capstone-Research-Project/edit/main/images/clusteringAlgorithm.png)
 
