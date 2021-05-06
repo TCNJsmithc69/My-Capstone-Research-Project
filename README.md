@@ -13,8 +13,8 @@ This file uses DBSCAN which is a python library which creates clusters(groupings
 
 Screenshot of output where locations are plotted by their longitude and latitude coordinates. The red circles represent the likely contaminated areas and the yellow circles represent potentially contaminated areas.
 
-![Alt text](relative/path/to/img.jpg?raw=true "clusteringAlgorithm")
-##coordinates.py
+![Image of Clustering](https://github.com/TCNJsmithc69/My-Capstone-Research-Project/blob/main/images/clusteringAlgorithm.PNG)
+
 
 This file uses the geopy library to convert addresses into a geolocation with x and y coordinates.
 
@@ -28,6 +28,7 @@ Html page that can be hosted on localhost that uses the javascript library leafl
 
 To run this file use the command python -m http.server after downloading a stable version of leaflet at 
 
-![Image of Clustering](https://github.com/TCNJsmithc69/My-Capstone-Research-Project/blob/main/images/clusteringAlgorithm.PNG)
-
 Screenshot of output for OpenStreetMap locations.
+![Image of OpenStreetMaps](https://github.com/TCNJsmithc69/My-Capstone-Research-Project/blob/main/images/clustersScreenshot.PNG)
+
+
