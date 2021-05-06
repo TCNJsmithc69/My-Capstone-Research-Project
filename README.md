@@ -1,4 +1,4 @@
-# My-Capstone-Research-Project
+# My-Capstone-Research-Project: Creating a Predictive Model for Potential Hazardous Locations
 SOAP(Students Organized Against Pollution)
 
 Christopher Smith
