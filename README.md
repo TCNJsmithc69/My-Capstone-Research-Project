@@ -29,6 +29,6 @@ Html page that can be hosted on localhost that uses the javascript library leafl
 To run this file use the command python -m http.server after downloading a stable version of leaflet at 
 
 ![Image of Clustering]
-(https://github.com/TCNJsmithc69/My-Capstone-Research-Project/edit/main/images/clusteringAlgorithm.png)
+(https://github.com/TCNJsmithc69/My-Capstone-Research-Project/blob/main/images/clusteringAlgorithm.PNG)
 
 Screenshot of output for OpenStreetMap locations.
