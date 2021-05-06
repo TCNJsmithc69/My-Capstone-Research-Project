@@ -1,4 +1,3 @@
-### Table of Contents
 - [clustering.py](#clustering.py)
 - [coordinates.py](#coordinates.py)
 - [index.htm](#index.htm)
