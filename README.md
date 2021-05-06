@@ -13,8 +13,6 @@ Here are some python files I've created for my Capstone Research Project. The go
 
 A description is given for each file listed. An example of front end development with HTML and javascript is found in index.htm. 
 
-## Heading
-
 ## clustering.py
 
 ## Description
