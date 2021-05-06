@@ -15,6 +15,7 @@ Screenshot of output where locations are plotted by their longitude and latitude
 
 ![Image of Clustering](https://github.com/TCNJsmithc69/My-Capstone-Research-Project/blob/main/images/clusteringAlgorithm.PNG)
 
+## coordinates.py
 
 This file uses the geopy library to convert addresses into a geolocation with x and y coordinates.
 
