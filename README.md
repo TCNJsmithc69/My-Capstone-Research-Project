@@ -1,5 +1,5 @@
-- [clustering](#clustering.py)
-- [coordinates](#coordinates.py)
+- [clustering](#clustering)
+- [coordinates](#coordinates)
 - [index](#index.htm)
 
 
