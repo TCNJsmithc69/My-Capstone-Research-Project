@@ -1,5 +1,8 @@
 ### Table of Contents
 - [clustering.py](#clustering.py)
+- [coordinates.py](#coordinates.py)
+- [index.htm](#index.htm)
+
 
 # My Capstone Research Project: Creating a Predictive Model for Potential Hazardous Locations
 SOAP(Students Organized Against Pollution)
