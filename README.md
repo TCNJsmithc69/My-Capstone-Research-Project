@@ -19,9 +19,9 @@ Screenshot of output where locations are plotted by their longitude and latitude
 
 This file uses the geopy library to convert addresses into a geolocation with x and y coordinates.
 
-## pythonWebscraper.py
+## webscraper.py
 
-Webcrawler that uses selenium to navigate to active contaminated sites on the NJDEP website for Trenton locations. Once it navigates to a specific page, addresses for each site in the Trenton area are stored in a file named addresses.csv.
+A combined webscraper and crawler that uses selenium to navigate to active contaminated sites on the NJDEP website for Trenton locations. Once it navigates to a specific page, addresses for each site in the Trenton area are stored in a file named addresses.csv.
 
 ## index.htm
 
