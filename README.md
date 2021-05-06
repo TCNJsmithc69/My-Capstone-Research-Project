@@ -32,14 +32,15 @@ This file uses the geopy library to convert addresses into a geolocation with x 
 A combined webscraper and crawler that uses selenium to navigate to active contaminated sites on the NJDEP website for Trenton locations. Once it navigates to a specific page, addresses for each site in the Trenton area are stored in a file named addresses.csv.
 
 ## Dependencies 
-
+Download selenium with the command  sudo pip install selenium
+Download chrome driver with associated with your chrome version at https://chromedriver.chromium.org/downloads
 # index.htm
 
 ## Description
 Html page that can be hosted on localhost that uses the javascript library leaflet which is a mapping tool. Using the longitude and latitude coordinates that were converted with coordinates.py, each brownfield location is displayed using OpenStreetMap. Also, cluster groups are shown using yellow(potentially contaminated) and red(likely contaminated) zones.
 
 ## Dependencies 
-To run this file use the command python -m http.server after downloading a stable version of leaflet at 
+To run this file use the command python -m http.server after downloading a stable version of leaflet at https://leafletjs.com/download.html
 
 ## Output
 Screenshot of output for OpenStreetMap locations.
