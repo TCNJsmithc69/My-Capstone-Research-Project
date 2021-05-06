@@ -1,0 +1,88 @@
+<!-- 
+    Christopher Smith
+    
+    This file is used for loading clusters formed from clustering.py.
+    Uses the leaflet javascript library in order to plot brownfield 
+    locations and clusters. Red zones are likely contaminated areas,
+    where yellow zones are potentially contaminated areas        
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+
+        <style>
+        #mapid { height: 1000px; }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="mapid"></div>
+            <script src = "https://d3js.org/d3.v4.min.js"></script>
+            <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+            <script>
+                //set view in the Trenton Area with longitude,latitude and zoom ratio
+                var mymap = L.map('mapid').setView([40, -74], 8);
+
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(mymap);
+                
+                //save latitude and longitude coordinates from coordinates.csv within the data folder
+                var Lat = [];
+                var Lon = [];
+
+                d3.csv("data/coordinates.csv", function(data) {
+                    //iterate through each location 
+                    for(var i = 0; i < data.length; i++) {
+                        Lat[i] = data[i].Lat;
+                        Lon[i] = data[i].Lon;
+                        //create a marker of each location the user can click on the marker and it'll show the site name
+                        var marker = L.marker([Lat[i], Lon[i]]).addTo(mymap)
+                            .bindPopup('brownfield location')
+                            .openPopup();
+                    }    
+                });    
+                
+                //save latiude and longitude coordinates from yellow_clusters.csv within the data folder
+                var Lat_cluster = [];
+                var Lon_cluster = [];
+
+                //Add yellow cluster zones these are the potentially contaminated zones
+                d3.csv("data/yellow_clusters.csv", function(data) {
+                    for(var i = 0; i < data.length; i++) {
+                        Lat_cluster[i] = data[i].Lat;
+                        Lon_cluster[i] = data[i].Lon;
+                        //create a yellow zone with radius 100 and insert it into the map
+                        var circle = L.circleMarker([Lat_cluster[i], Lon_cluster[i]], {
+                        color: 'yellow',
+                        fillColor: '#CAC428',
+                        fillOpacity: 0.5,
+                        radius: 100
+                        }).addTo(mymap);          
+                    }    
+                }); 
+                 //save latiude and longitude coordinates from red_clusters.csv within the data folder
+                var Lat_cluster2 = [];
+                var Lon_cluster2 = [];
+                d3.csv("data/red_clusters.csv", function(data) { 
+                    for(var i = 0; i < data.length; i++) {
+                        Lat_cluster2[i] = data[i].Lat;
+                        Lon_cluster2[i] = data[i].Lon;
+                        //create a red zone with radius 100 and insert it into the map
+                        var circle = L.circleMarker([Lat_cluster2[i], Lon_cluster2[i]], {
+                        color: 'red',
+                        fillColor: '#f03',
+                        fillOpacity: 0.5,
+                        radius: 100
+                        }).addTo(mymap);    
+                    } 
+                }); 
+            </script>
+    </body>
+
+</html>
