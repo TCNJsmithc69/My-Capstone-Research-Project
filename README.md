@@ -1,5 +1,5 @@
 ### Table of Contents
-[clustering.py](https://github.com/TCNJsmithc69/My-Capstone-Research-Project/blob/main/README.md#clustering.py)
+- [clustering.py](#clustering.py)
 
 # My Capstone Research Project: Creating a Predictive Model for Potential Hazardous Locations
 SOAP(Students Organized Against Pollution)
