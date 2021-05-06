@@ -1,4 +1,4 @@
-- [clustering](#clustering)
+- [clustering.py](#clustering)
 - [coordinates.py](#coordinates.py)
 - [index.htm](#index.htm)
 
@@ -13,7 +13,7 @@ Here are some python files I've created for my Capstone Research Project. The go
 
 A description is given for each file listed. An example of front end development with HTML and javascript is found in index.htm. 
 
-## clustering
+## clustering.py
 
 ## Description
 This file uses DBSCAN which is a python library which creates clusters(groupings) out of given data. My code implements this algorithm to create a yellow cluster which is a grouping for potentially contaminated areas and a red cluster which is a different grouping for likely contaminated areas.
